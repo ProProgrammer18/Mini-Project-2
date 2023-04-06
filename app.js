@@ -3,6 +3,7 @@ const router = require("./routes/noticeRoutes");
 const app = express();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 app.use(cookieParser());
 app.use(express.json());
