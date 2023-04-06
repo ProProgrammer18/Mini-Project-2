@@ -80,7 +80,7 @@ exports.postSignin = async (req, res) => {
 };
 
 exports.getSignup = (req, res) => {
-  return req.render("login.ejs");
+  return res.render("login.ejs");
 };
 
 exports.postSignup = async (req, res) => {
