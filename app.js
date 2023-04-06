@@ -13,7 +13,7 @@ app.use(express.static("./public"));
 app.use(express.urlencoded({ extended: true }));
 
 // Set EJS as templating engine
-app.set("views", "./views");
+app.set("views", path.join(__dirname, "views"));
 
 app.set("view engine", "ejs");
 
