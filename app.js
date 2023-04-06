@@ -9,7 +9,7 @@ app.use(cookieParser());
 app.use(express.json());
 // app.use(express.static());
 
-app.use(express.static("./public"));
+app.use(express.static(path.join(__dirname, "views")));
 
 app.use(express.urlencoded({ extended: true }));
 
